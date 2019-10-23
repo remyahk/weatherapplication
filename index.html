@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Weather Forecast</h2>
+    </header>
+    <!-- input search -->
+    <div id="searchcontainer">
+      <input
+        type="text"
+        placeholder="city name or ZIP code"
+        id="searchinput"
+        class="searchcontrol"
+      />
+      <button class="searchcontrol" id="searchbutton">Search</button>
+    </div>
+
+    <!-- weather description -->
+    <div id="weather">
+      <div id="weatherdescription">
+        <div id="datenow"></div>
+        <h1 id="cityheader"></h1>
+
+        <div id="weathermain">
+          <div id="temperature"></div>
+          <div id="temperaturedescription"></div>
+          <div><img id="documenticon" /></div>
+        </div>
+        <hr />
+        <div id="winddesc" class="bottomdetails"></div>
+        <div id="humidity" class="bottomdetails"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
